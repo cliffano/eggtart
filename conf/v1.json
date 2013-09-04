@@ -1,0 +1,67 @@
+{
+  "posts": {
+    "update": {
+    },
+    "add": {
+      "url": ["required", "url"],
+      "description": ["required", "string"],
+      "extended": ["string"],
+      "tags": ["string"],
+      "dt": ["date"],
+      "replace": ["no"],
+      "shared": ["no"]
+    },
+    "delete": {
+      "url": ["required", "url"]
+    },
+    "get": {
+      "tag": ["string"],
+      "dt": ["date"],
+      "url": ["url"],
+      "hashes": ["string"],
+      "meta": ["yes"]
+    },
+    "recent": {
+      "tag": ["string"],
+      "count": ["number", "min_1", "max_100"]
+    },
+    "dates": {
+      "tag": ["string"]
+    },
+    "all": {
+      "tag": ["string"],
+      "start": ["number"],
+      "results": ["number"],
+      "fromdt": ["date"],
+      "todt": ["date"],
+      "meta": ["yes"],
+      "hashes": ["novalue"]
+    },
+    "suggest": {
+      "url": ["required"]
+    }
+  },
+  "tags": {
+  	"get": {
+  	},
+    "delete": {
+      "tag": ["required", "string"]
+    },
+    "rename": {
+      "old": ["required", "string"],
+      "new": ["required", "string"]
+    }
+  },
+  "tagBundles": {
+  	"all": {
+      "bundle": ["string"]
+  	},
+  	"set": {
+      "bundle": ["required", "string"],
+      "tags": ["required", "string"]
+  	},
+  	"delete": {
+      "bundle": ["required", "string"]
+    }
+  }
+}

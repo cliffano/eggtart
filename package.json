@@ -1,0 +1,45 @@
+{
+  "name": "eggtart",
+  "description": "Delicious API node.js client",
+  "keywords": [
+    "delicious",
+    "delicious.com"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://github.com/cliffano/eggtart",
+  "author": "Cliffano Subagio <blah@cliffano.com> (http://blog.cliffano.com)",
+  "contributors": [
+    "All contributors (https://github.com/cliffano/eggtart/graphs/contributors)"
+  ],
+  "main": "./lib/eggtart",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cliffano/eggtart.git"
+  },
+  "bugs": {
+    "url": "http://github.com/cliffano/eggtart/issues"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "dependencies": {
+    "bagofrequest": "~0.0.5",
+    "lodash": "~1.3.1",
+    "validator": "~1.5.1",
+    "xml2js": "~0.2.8"
+  },
+  "devDependencies": {
+    "buster": "~0.6.12"
+  },
+  "scripts": {},
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/cliffano/eggtart/raw/master/LICENSE"
+    }
+  ]
+}
