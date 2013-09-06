@@ -19,7 +19,7 @@ buster.testCase('validator - validate', {
   },
   'should pass error when an arg is invalid': function (done) {
     var rules = {
-      arg1: ['url']
+      arg1: ['required', 'url']
     };
     validator.validate(rules, this.args, function (err) {
       assert.equals(err.message, 'Validation error - arg: arg1, value: hello, desc: Invalid URL');
