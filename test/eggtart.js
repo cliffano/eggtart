@@ -22,7 +22,7 @@ buster.testCase('eggtart - init', {
     this.eggtart = new Eggtart('someusername', 'somepassword', { version: 'v2', wait: 1 });
     this.eggtart._request = function (endpoint, args, cb) { cb(); };
     assert.equals(typeof this.eggtart.posts().recent, 'function');
-    this.eggtart.posts().recent({ tag: 'sometag' }, function (err, result) {
+    this.eggtart.posts().recent(function (err, result) {
       assert.equals(err, undefined);
       done();
     });
