@@ -105,17 +105,17 @@ buster.testCase('validator - checks', {
       done();
     }
   },
-  'noValue should not throw error when value is null': function (done) {
+  'novalue should not throw error when value is null': function (done) {
     try {
-      validator.checks.noValue(null);
+      validator.checks.novalue(null);
       assert.isTrue(true);
       done();
     } catch (e) {
     }
   },
-  'noValue should throw error when value is not null': function (done) {
+  'novalue should throw error when value is not null': function (done) {
     try {
-      validator.checks.noValue('foobar');
+      validator.checks.novalue('foobar');
     } catch (e) {
       assert.equals(e.message, 'String is not empty');
       done();
