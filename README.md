@@ -40,7 +40,7 @@ Get recent bookmarks:
 
 Get bookmarks for specific tags:
 
-    eggtart.posts().get({ tag: 'tag1+tag2' }, function (err, result) {
+    eggtart.posts().get({ tag: 'sometag' }, function (err, result) {
       ...
     });
 
