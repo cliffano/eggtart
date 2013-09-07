@@ -8,8 +8,19 @@ buster.testCase('validator - validate', {
       arg2: 123
     };
   },
+  'should pass error when an unknown arg is provided': function (done) {
+    var rules = {
+      arg1: ['string']
+    };
+    validator.validate(rules, this.args, function (err) {
+      assert.equals(err.message, 'Validation error - arg2 argument is unknown');
+      done();
+    });
+  },
   'should pass error when a required arg is not provided': function (done) {
     var rules = {
+      arg1: ['string'],
+      arg2: ['number'],
       arg3: ['required']
     };
     validator.validate(rules, this.args, function (err) {
@@ -19,7 +30,8 @@ buster.testCase('validator - validate', {
   },
   'should pass error when an arg is invalid': function (done) {
     var rules = {
-      arg1: ['required', 'url']
+      arg1: ['required', 'url'],
+      arg2: ['number']
     };
     validator.validate(rules, this.args, function (err) {
       assert.equals(err.message, 'Validation error - arg: arg1, value: hello, desc: Invalid URL');
@@ -28,6 +40,8 @@ buster.testCase('validator - validate', {
   },
   'should not pass error when all args are correct': function (done) {
     var rules = {
+      arg1: ['string'],
+      arg2: ['number']
     };
     validator.validate(rules, this.args, function (err) {
       assert.equals(err, undefined);
