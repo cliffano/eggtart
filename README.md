@@ -11,7 +11,7 @@ Eggtart
 
 Eggtart is a [Delicious API](https://delicious.com/developers) node.js client.
 
-This is handy when you want to use Delicious API service from a node.js application. Delicious API methods are available as Eggtart methods, e.g. https://api.delicious.com/v1/posts/recent is mapped to eggtart.posts().recent(cb) .
+This is handy when you want to use Delicious API service from a node.js application. Delicious API methods are available as Eggtart methods, e.g. https://api.delicious.com/v1/posts/recent?count=8 is mapped to eggtart.posts().recent({ count: 8 }, cb); .
 
 Tested with Delicious API v1.
 
@@ -55,3 +55,5 @@ Fetch tag bundles:
     eggtart.tagBundles().all(function (err, result) {
       ...
     });
+
+Check out [Delicious API](https://delicious.com/developers) documentation for a complete list of available methods.
