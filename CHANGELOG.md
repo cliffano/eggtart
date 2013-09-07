@@ -1,3 +1,6 @@
+### 0.0.3
+*
+
 ### 0.0.2
 * Fix posts/all?hashes arg validation
 * Add unknown argument validation
