@@ -1,7 +1,9 @@
-var buster = require('buster'),
+var buster = require('buster-node'),
   Eggtart = require('../lib/eggtart'),
   fs = require('fs'),
-  req = require('bagofrequest');
+  referee = require('referee'),
+  req = require('bagofrequest'),
+  assert = referee.assert;
 
 buster.testCase('eggtart - init', {
   setUp: function () {

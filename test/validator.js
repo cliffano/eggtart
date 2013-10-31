@@ -1,5 +1,7 @@
-var buster = require('buster'),
-  validator = require('../lib/validator');
+var buster = require('buster-node'),
+  referee = require('referee'),
+  validator = require('../lib/validator'),
+  assert = referee.assert;
 
 buster.testCase('validator - validate', {
   setUp: function () {
