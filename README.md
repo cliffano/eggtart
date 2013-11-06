@@ -56,4 +56,4 @@ Fetch tag bundles:
       ...
     });
 
-Check out [Delicious API](https://delicious.com/developers) documentation for a complete list of available methods.
+Check out [Delicious API](https://github.com/avos/delicious-api) documentation for a complete list of available methods.
