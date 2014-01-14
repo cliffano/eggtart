@@ -65,7 +65,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.date('TZTZ');
     } catch (e) {
-      assert.equals(e.message, 'Invalid characters');
+      assert.equals(e.message, 'Invalid date');
       done();
     }
   },
@@ -83,7 +83,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.min_1(0);
     } catch (e) {
-      assert.equals(e.message, 'Invalid number');
+      assert.equals(e.message, 'Value must be greater than or equal to 1');
       done();
     }
   },
@@ -101,7 +101,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.max_100(101);
     } catch (e) {
-      assert.equals(e.message, 'Invalid number');
+      assert.equals(e.message, 'Value must be less than or equal to 100');
       done();
     }
   },
@@ -117,7 +117,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.no('yes');
     } catch (e) {
-      assert.equals(e.message, 'Not equal');
+      assert.equals(e.message, 'Value should be \'no\'');
       done();
     }
   },
@@ -133,7 +133,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.novalue('foobar');
     } catch (e) {
-      assert.equals(e.message, 'String is not empty');
+      assert.equals(e.message, 'Value must be a null');
       done();
     }
   },
@@ -165,7 +165,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.string();
     } catch (e) {
-      assert.equals(e.message, 'String is empty');
+      assert.equals(e.message, 'Value should be a non-empty string');
       done();
     }
   },
@@ -197,7 +197,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.yes('no');
     } catch (e) {
-      assert.equals(e.message, 'Not equal');
+      assert.equals(e.message, 'Value should be \'yes\'');
       done();
     }
   }

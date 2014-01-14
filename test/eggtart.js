@@ -45,7 +45,7 @@ buster.testCase('eggtart - init', {
     this.eggtart._request = function (endpoint, args, cb) { cb(); };
     assert.equals(typeof this.eggtart.posts().recent, 'function');
     this.eggtart.posts().recent({ tag: undefined }, function (err, result) {
-      assert.equals(err.message, 'Validation error - arg: tag, value: undefined, desc: String is empty');
+      assert.equals(err.message, 'Validation error - arg: tag, value: undefined, desc: Value should be a non-empty string');
       done();
     });
   }
