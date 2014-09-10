@@ -5,7 +5,7 @@
     "delicious",
     "delicious.com"
   ],
-  "version": "0.0.3",
+  "version": "0.1.0",
   "homepage": "http://github.com/cliffano/eggtart",
   "author": "Cliffano Subagio <blah@cliffano.com> (http://blog.cliffano.com)",
   "contributors": [
@@ -20,10 +20,12 @@
     "url": "http://github.com/cliffano/eggtart/issues"
   },
   "directories": {
+    "bin": "./bin",
     "lib": "./lib",
     "test": "./test"
   },
   "dependencies": {
+    "bagofcli": "~0.0.8",
     "bagofrequest": "~0.0.6",
     "validator": "~3.16.0",
     "xml2js": "~0.4.4"
@@ -34,7 +36,7 @@
   },
   "scripts": {},
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "licenses": [
     {
