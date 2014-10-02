@@ -19,7 +19,7 @@
     "type": "buster-istanbul"
   },
   "test-integration": {
-    "type": "buster"
+    "type": "cmdt"
   },
   "doc": {
     "type": "dox-foundation"

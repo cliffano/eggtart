@@ -25,9 +25,12 @@
     "test": "./test"
   },
   "dependencies": {
-    "bagofcli": "~0.0.8",
-    "bagofrequest": "~0.0.6",
-    "validator": "~3.16.0",
+    "async": "~0.9.0",
+    "bagofcli": "~0.2.0",
+    "bagofrequest": "~0.1.0",
+    "lodash": "~2.4.1",
+    "validator": "~3.19.0",
+    "webshot": "~0.15.3",
     "xml2js": "~0.4.4"
   },
   "devDependencies": {

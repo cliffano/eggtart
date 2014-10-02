@@ -19,7 +19,7 @@ Tested with Delicious API v1.
 Installation
 ------------
 
-    npm install eggtart
+    npm install [-g] eggtart
 
 or as a dependency in package.json file:
 
@@ -58,3 +58,14 @@ Fetch tag bundles:
     });
 
 Check out [Delicious API](https://github.com/avos/delicious-api) documentation for a complete list of available methods.
+
+
+Eggtart also has a set of CLI commands.
+
+Take screenshots of bookmarks having at least a tag within the specified comma-separated tag list:
+
+    eggtart -u user:pass screenshot --tags tag1,tag2,tag3
+
+Delete bookmarks having at least a tag within the specified comma-separated tag list:
+
+    eggtart -u user:pass delete --tags tag1,tag2,tag3

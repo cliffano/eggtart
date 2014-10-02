@@ -1,0 +1,25 @@
+{
+  "options": [
+    { "arg": "-u, --user-pass <userPass>", "rules": [ "required" ], "desc": "Colon-separated credential: username:password" }
+  ],
+  "commands": {
+    "delete": {
+      "desc": "Delete bookmarks",
+      "options": [
+        { "arg": "-t, --tags <tags>", "rules": [ "required" ], "desc": "Bookmark tags (comma-separated)" }
+      ],
+      "examples": [
+        "eggtart -u user:pass delete --tags tag1,tag2,tag3"
+      ]
+    },
+    "screenshot": {
+      "desc": "Take screenshots of bookmarks based on tags",
+      "options": [
+        { "arg": "-t, --tags <tags>", "rules": [ "required" ], "desc": "Bookmark tags (comma-separated)" }
+      ],
+      "examples": [
+        "eggtart -u user:pass screenshot --tags tag1,tag2,tag3"
+      ]
+    }
+  }
+}

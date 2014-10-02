@@ -1,5 +1,6 @@
 ### 0.1.0-pre
 * Set min node engine to >= v0.10.0
+* Add CLI support with screenshot and delete commands
 
 ### 0.0.3
 * Change test lib to buster-node + referee

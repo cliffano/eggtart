@@ -1,0 +1,7 @@
+- params:
+    eggtart: ../../../../../bin/eggtart
+
+- description: Inexisting command should display error message
+  command: '{eggtart} inexistingcommand'
+  exitcode: 1
+  output: 'Unknown command: inexistingcommand, use --help for more info'
