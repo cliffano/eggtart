@@ -53,6 +53,7 @@ buster.testCase('eggtart - init', {
 
 buster.testCase('eggtart - request', {
   setUp: function () {
+    this.mock({});
     this.eggtart = new Eggtart('someusername', 'somepassword', { wait: 1 });
     this.eggtart._init = function () {};
   },

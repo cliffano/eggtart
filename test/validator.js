@@ -5,6 +5,7 @@ var buster = require('buster-node'),
 
 buster.testCase('validator - validate', {
   setUp: function () {
+    this.mock({});
     this.args = {
       arg1: 'hello',
       arg2: 123
@@ -53,6 +54,9 @@ buster.testCase('validator - validate', {
 });
 
 buster.testCase('validator - checks', {
+  setUp: function () {
+    this.mock({});
+  },
   'date should not throw error when format is correct': function (done) {
     try {
       validator.checks.date('2010—02—13T10:11:12Z');

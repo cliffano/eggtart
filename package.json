@@ -29,13 +29,13 @@
     "bagofcli": "~0.2.0",
     "bagofrequest": "~0.1.0",
     "lodash": "~2.4.1",
-    "validator": "~3.19.0",
+    "validator": "~3.22.1",
     "webshot": "~0.15.3",
     "xml2js": "~0.4.4"
   },
   "devDependencies": {
     "buster-node": "~0.7.0",
-    "referee": "~1.0.1"
+    "referee": "~1.1.0"
   },
   "scripts": {},
   "engines": {
