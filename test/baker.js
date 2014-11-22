@@ -71,7 +71,7 @@ buster.testCase('baker - screenshot', {
     baker.screenshot(['tag1'], done);
   },
   'should log error message when an error occurred': function (done) {
-    this.mockConsole.expects('error').once().withExactArgs('%s - %s %s', 'error'.red, 'some error', 'tag1-somedesc.png');
+    this.mockConsole.expects('error').once().withExactArgs('%s - %s while creating %s', 'error'.red, 'some error', 'tag1-somedesc.png');
     var mockEggtart = {
       posts: function () {
         return {
