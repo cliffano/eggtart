@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "async": "~0.9.0",
-    "bagofcli": "~0.2.0",
+    "bagofcli": "~0.2.1",
     "bagofrequest": "~0.1.0",
     "lodash": "~2.4.1",
     "validator": "~3.22.1",
@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "buster-node": "~0.7.0",
+    "proxyquire": "~1.1.0",
     "referee": "~1.1.0"
   },
   "scripts": {},
