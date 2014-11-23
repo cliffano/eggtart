@@ -62,7 +62,7 @@ Check out [Delicious API](https://github.com/avos/delicious-api) documentation f
 
 Eggtart also has a set of CLI commands.
 
-Take screenshots of bookmarks having at least a tag within the specified comma-separated tag list:
+Take screenshots of bookmarks having at least one tag within the specified comma-separated tag list:
 
     eggtart -u user:pass screenshot --tags tag1,tag2,tag3
 
