@@ -69,3 +69,8 @@ Take screenshots of bookmarks having at least one tag within the specified comma
 Delete bookmarks having at least a tag within the specified comma-separated tag list:
 
     eggtart -u user:pass delete --tags tag1,tag2,tag3
+
+Colophon
+--------
+
+[Developer's Guide](http://cliffano.github.io/developers_guide.html#nodejs)
