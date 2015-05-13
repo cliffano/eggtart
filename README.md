@@ -2,8 +2,8 @@
 
 [![Build Status](https://img.shields.io/travis/cliffano/eggtart.svg)](http://travis-ci.org/cliffano/eggtart)
 [![Dependencies Status](https://img.shields.io/david/cliffano/eggtart.svg)](http://david-dm.org/cliffano/eggtart)
-[![Coverage Status](https://coveralls.io/repos/cliffano/eggtart/badge.png?branch=master)](https://coveralls.io/r/cliffano/eggtart?branch=master)
-[![Published Version](https://badge.fury.io/js/eggtart.png)](http://badge.fury.io/js/eggtart)
+[![Coverage Status](https://img.shields.io/coveralls/cliffano/eggtart.svg)](https://coveralls.io/r/cliffano/eggtart?branch=master)
+[![Published Version](https://img.shields.io/npm/v/eggtart.svg)](http://www.npmjs.com/package/eggtart)
 <br/>
 [![npm Badge](https://nodei.co/npm/eggtart.png)](http://npmjs.org/package/eggtart)
 
