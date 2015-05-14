@@ -1,4 +1,7 @@
-### 0.1.1-pre
+### 0.1.2-pre
+*
+
+### 0.1.1
 * Add /v1/posts/get tag_separator=comma arg support
 * Add /v1/posts/all tag_separator=comma arg support
 
