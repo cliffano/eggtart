@@ -55,7 +55,8 @@
         "results": ["number"],
         "fromdt": ["date"],
         "todt": ["date"],
-        "meta": ["yes"]
+        "meta": ["yes"],
+        "hashes": ["novalue"]
       }
     },
     "suggest": {
