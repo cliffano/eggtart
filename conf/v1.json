@@ -29,7 +29,8 @@
         "dt": ["date"],
         "url": ["url"],
         "hashes": ["string"],
-        "meta": ["yes"]
+        "meta": ["yes"],
+        "tag_separator": ["comma"]
       }
     },
     "recent": {

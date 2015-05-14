@@ -1,5 +1,5 @@
 ### 0.1.1-pre
-*
+* Add /v1/posts/get tag_separator=comma arg support
 
 ### 0.1.0
 * Set min node engine to >= v0.10.0

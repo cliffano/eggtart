@@ -57,6 +57,22 @@ buster.testCase('validator - checks', {
   setUp: function () {
     this.mock({});
   },
+  'comma should not throw error when value is comma': function (done) {
+    try {
+      validator.checks.comma('comma');
+      assert.isTrue(true);
+      done();
+    } catch (e) {
+    }
+  },
+  'comma should throw error when value is not comma': function (done) {
+    try {
+      validator.checks.comma('foobar');
+    } catch (e) {
+      assert.equals(e.message, 'Value should be \'comma\'');
+      done();
+    }
+  },
   'date should not throw error when format is correct': function (done) {
     try {
       validator.checks.date('2010—02—13T10:11:12Z');
