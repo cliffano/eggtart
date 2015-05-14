@@ -49,13 +49,13 @@
     "all": {
       "endpoint": "posts/all",
       "args": {
+        "tag_separator": ["comma"],
         "tag": ["string"],
         "start": ["number"],
         "results": ["number"],
         "fromdt": ["date"],
         "todt": ["date"],
-        "meta": ["yes"],
-        "hashes": ["novalue"]
+        "meta": ["yes"]
       }
     },
     "suggest": {
