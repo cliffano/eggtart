@@ -57,7 +57,7 @@ Fetch tag bundles:
       ...
     });
 
-Check out [Delicious API](https://github.com/avos/delicious-api) documentation for a complete list of available methods.
+Check out [Delicious API](https://github.com/SciDevs/delicious-api) documentation for a complete list of available methods.
 
 
 Eggtart also has a set of CLI commands.
