@@ -142,7 +142,7 @@ buster.testCase('baker - _iterPostsByTags', {
     };
     var baker = new Baker(mockEggtart);
     baker._iterPostsByTags(['tag1'], postCb, function (err, result) {
-      assert.equals(err, undefined);
+      assert.equals(err, null);
       done();
     });
   },
@@ -161,7 +161,7 @@ buster.testCase('baker - _iterPostsByTags', {
     };
     var baker = new Baker(mockEggtart);
     baker._iterPostsByTags(['tag1', 'tag2'], null, function (err, result) {
-      assert.equals(err, undefined);
+      assert.equals(err, null);
       done();
     });
   }

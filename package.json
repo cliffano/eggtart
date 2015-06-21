@@ -25,17 +25,17 @@
     "test": "./test"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "bagofcli": "^0.2.1",
-    "bagofrequest": "^0.1.0",
-    "lodash": "^3.7.0",
-    "validator": "^3.39.0",
-    "webshot": "^0.15.4",
-    "xml2js": "^0.4.8"
+    "async": "^1.2.1",
+    "bagofcli": "^0.2.2",
+    "bagofrequest": "^0.1.1",
+    "lodash": "^3.9.3",
+    "validator": "^3.40.1",
+    "webshot": "^0.16.0",
+    "xml2js": "^0.4.9"
   },
   "devDependencies": {
     "buster-node": "^0.7.1",
-    "proxyquire": "^1.4.0",
+    "proxyquire": "^1.5.0",
     "referee": "^1.1.1"
   },
   "scripts": {},
