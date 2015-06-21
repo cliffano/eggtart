@@ -1,5 +1,5 @@
 ### 0.1.2-pre
-*
+* Add build reports to readme
 
 ### 0.1.1
 * Add /v1/posts/get tag_separator=comma arg support
