@@ -1,0 +1,4 @@
+[ 'lib/baker.js',
+  'lib/cli.js',
+  'lib/eggtart.js',
+  'lib/validator.js' ]
