@@ -40,7 +40,7 @@ buster.testCase('eggtart - init', {
         }
       }
     };
-    this.mockFs.expects('readFileSync').once().returns(JSON.stringify(config));
+    // this.mockFs.expects('readFileSync').once().returns(JSON.stringify(config));
     this.eggtart = new Eggtart('someusername', 'somepassword');
     this.eggtart._request = function (endpoint, args, cb) { cb(); };
     assert.equals(typeof this.eggtart.posts().recent, 'function');
