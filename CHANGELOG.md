@@ -1,5 +1,5 @@
-### 0.1.3-pre
-*
+### 0.1.3
+* Coerce validator values for validator.js 5.x compatibility
 
 ### 0.1.2
 * Add build reports to readme

@@ -185,7 +185,7 @@ buster.testCase('validator - checks', {
     try {
       validator.checks.string();
     } catch (e) {
-      assert.equals(e.message, 'Value should be a non-empty string');
+      assert.equals(e.message, 'This library (validator.js) validates strings only');
       done();
     }
   },
